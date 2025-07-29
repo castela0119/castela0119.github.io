@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Noise - 개발자 페이지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #718096;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .feature-list {
+            list-style: none;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .feature-list li:before {
+            content: "🎵";
+            position: absolute;
+            left: 0;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-info h2 {
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            color: #718096;
+        }
+        
+        .download-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            margin: 10px;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pure Noise</h1>
+            <p>편안한 수면을 위한 백색소음 앱</p>
+        </div>
+        
+        <div class="content">
+            <div class="card">
+                <h2>앱 소개</h2>
+                <p>Pure Noise는 다양한 자연음과 백색소음을 제공하여 편안한 수면 환경을 만들어주는 앱입니다. 
+                바쁜 일상 속에서 마음의 평화를 찾고 싶은 분들을 위해 제작되었습니다.</p>
+            </div>
+            
+            <div class="card">
+                <h2>주요 기능</h2>
+                <ul class="feature-list">
+                    <li>비 소리, 바다 소리, 심장 소리 등 다양한 자연음</li>
+                    <li>타이머 기능으로 자동 종료</li>
+                    <li>백그라운드 재생 지원</li>
+                    <li>사용자 친화적 인터페이스</li>
+                    <li>고품질 오디오 제공</li>
+                    <li>배터리 최적화</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <h2>앱 다운로드</h2>
+            <p>지금 바로 Pure Noise를 다운로드하고 편안한 수면을 경험해보세요.</p>
+            <a href="#" class="download-btn">Google Play Store</a>
+            <a href="#" class="download-btn">App Store</a>
+        </div>
+        
+        <div class="contact-info">
+            <h2>연락처</h2>
+            <p>문의사항이나 피드백이 있으시면 언제든 연락주세요.</p>
+            <p><strong>개발자:</strong> Pure Noise Team</p>
+            <p><strong>이메일:</strong> support@purenoise.app</p>
+        </div>
+    </div>
+</body>
+</html> 
